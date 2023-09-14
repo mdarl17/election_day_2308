@@ -102,7 +102,6 @@ You have been contacted by the local government to create a program that helps t
 | #vote_counts | A hash with each candidate's name as a key and their count of votes as the value. |
 
 ## Iteration 4
-
 Use TDD to implement the following methods on the `Race` class.
 
 The local government agency has contacted you about compiling additional information about each of the races.
