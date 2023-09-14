@@ -26,4 +26,14 @@ class Election
       hash
     end
   end
+
+  def winners
+    solo_winners = @races.reduce([]) do |winners_arr, race|
+      if race.winner && !race.tie?
+          winners_arr << race.winner
+      end
+      winners_arr
+    end
+    solo_winners
+  end
 end
