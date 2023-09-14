@@ -16,7 +16,7 @@ describe Election do
     it 'can add a race and keep a record of races' do
       election = Election.new("2024")
       race_1 = Race.new("Texas Governor")
-      race_s2 = Race.new("U.S. House Rep")
+      race_2 = Race.new("U.S. House Rep")
       candidate_1 = race_1.register_candidate!({name: "Diana D", party: :democrat})
       candidate_2 = race_1.register_candidate!({name: "Roberto R", party: :republican})
       candidate_3 = race_2.register_candidate!({name: "Mike D", party: :independent})
